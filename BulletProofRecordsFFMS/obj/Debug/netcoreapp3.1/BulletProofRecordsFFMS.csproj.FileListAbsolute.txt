@@ -61,3 +61,7 @@ C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\BulletProofRecordsFFMS.dll
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\BulletProofRecordsFFMS.pdb
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\BulletProofRecordsFFMS.genruntimeconfig.cache
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormArtista.g.cs
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\MenuPrincipal.g.cs
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormArtista.baml
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\MenuPrincipal.baml

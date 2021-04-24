@@ -1,0 +1,46 @@
+﻿<Window x:Class="BulletProofRecordsFFMS.FormArtista"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BulletProofRecordsFFMS"
+        mc:Ignorable="d"
+        Title="FormArtista" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="537*"/>
+            <ColumnDefinition Width="263*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Colección de artistas" Grid.Column="0"/>
+        <GroupBox x:Name="gbDatosArtista" Header="Informacion del artista" Grid.Column="1" Margin="10,43,10,139">
+            <Grid x:Name="gridGBDatosArtista">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="27*"/>
+                    <ColumnDefinition Width="47*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="Nombre: " HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0"/>
+                <TextBox x:Name="txtArtNombre" Grid.Row="0" Margin="84,16,0,10" Grid.ColumnSpan="2"/>
+
+                <Label Content="Estado:" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+                <ComboBox x:Name="cmbEstado" Grid.Row="1" Margin="84,16,0,16" Grid.ColumnSpan="2">
+                    <ComboBoxItem Content="Desactivado"/>
+                    <ComboBoxItem Content="Activado"/>
+                </ComboBox>
+
+                <Button x:Name="btnIngresar" Content="Ingresar" Grid.Column="0" Grid.Row="2" Click="btnIngresar_Click" Margin="0,15,0,10" />
+                <Button x:Name="btnLimpiar" Content="Limpiar" Grid.Row="2" Click="btnLimpiar_Click" Margin="20,15,41,9" RenderTransformOrigin="0.608,0.482" Grid.Column="1"/>
+                <Button x:Name="btnSalir" Content="Regresar" Grid.Row="3" Click="btnSalir_Click" Margin="20,10,41,10" Grid.Column="1"/>
+            </Grid>
+        </GroupBox>
+
+        <DataGrid x:Name="dgArtista" Margin="30,43,24,133" Grid.Column="0" IsReadOnly="True">
+
+        </DataGrid>
+    </Grid>
+</Window>
