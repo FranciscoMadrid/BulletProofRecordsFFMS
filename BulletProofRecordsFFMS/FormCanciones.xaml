@@ -1,0 +1,62 @@
+﻿<Window x:Class="BulletProofRecordsFFMS.FormCanciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BulletProofRecordsFFMS"
+        mc:Ignorable="d"
+        Title="FormCanciones" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Colección de canciones" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="23,44,377,100" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dgCanciones" Grid.Column="0" Grid.Row="0" Margin="23,72,27,87" Grid.RowSpan="3" IsReadOnly="True"/>
+
+        <GroupBox Header="Informacion de la cancion" Grid.Column="1" Grid.Row="0" Margin="120,0,10,6" Grid.RowSpan="2">
+            <Grid x:Name="GridGBInfoCancion">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Nombre de la cancion:" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtNombreCancion" Grid.Column="1" Grid.Row="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="26" VerticalAlignment="Center"/>
+
+                <Label Content="Id del artista: " Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtArtistaID" IsReadOnly="True" Grid.Column="1" Grid.Row="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="26" VerticalAlignment="Center"/>
+
+                <Label Content="Id del album:" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtAlbumID" IsReadOnly="True" Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="26" VerticalAlignment="Center"/>
+
+                <Label Content="Genero:" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtGenero" Grid.Column="1" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="26" VerticalAlignment="Center"/>
+
+                <Label Content="Año de creacion:" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtAnioCreacion" Grid.Column="1" Grid.Row="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="26" VerticalAlignment="Center"/>
+
+                <Button x:Name="btnIngresar" Grid.Column="0" Grid.Row="5" Content="Ingresar" Margin="10,6,10,0" Height="21" VerticalAlignment="Top" Click="btnIngresar_Click" />
+                <Button x:Name="btnLimpiar" Grid.Column="1" Grid.Row="5" Content="Limpiar" Margin="10,6,10,28" Click="btnLimpiar_Click"/>
+                <Button x:Name="btnRegresar" Grid.Column="1" Grid.Row="5" Content="Regresar" Margin="10,32,10,0" Click="btnRegresar_Click"/>
+            </Grid>
+        </GroupBox>
+
+        <Label Content="Selecione el album" Grid.Column="1" Grid.Row="1" Margin="120,143,-120,0" Grid.RowSpan="2"/>
+        <DataGrid x:Name="dgAlbum" Grid.Column="1" Grid.Row="2" Margin="120,27,33,10" SelectionChanged="dgAlbum_SelectionChanged" IsReadOnly="True"/>
+    </Grid>
+</Window>

@@ -59,7 +59,7 @@ namespace BulletProofRecordsFFMS
 
         private void MostarAlbums ()
         {
-            dgAlbums.ItemsSource = Alb.MostarAlbum().DefaultView;
+            dgAlbums.ItemsSource = Alb.MostrarAlbum().DefaultView;
         }
 
         private void MostarArtistas ()

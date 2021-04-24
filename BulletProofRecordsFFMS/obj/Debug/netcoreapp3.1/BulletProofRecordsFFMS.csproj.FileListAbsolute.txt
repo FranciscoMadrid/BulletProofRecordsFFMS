@@ -67,3 +67,5 @@ C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\MenuPrincipal.baml
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormAlbums.g.cs
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormAlbums.baml
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormCanciones.g.cs
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormCanciones.baml

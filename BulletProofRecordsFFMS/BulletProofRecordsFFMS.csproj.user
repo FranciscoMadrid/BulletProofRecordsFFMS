@@ -13,6 +13,9 @@
     <Compile Update="FormArtista.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="FormCanciones.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MenuPrincipal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="FormArtista.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FormCanciones.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

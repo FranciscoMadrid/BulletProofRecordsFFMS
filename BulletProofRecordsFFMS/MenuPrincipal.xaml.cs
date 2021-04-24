@@ -35,5 +35,12 @@ namespace BulletProofRecordsFFMS
             n2.Show();
             this.Close();
         }
+
+        private void btnCancion_Click(object sender, RoutedEventArgs e)
+        {
+            FormCanciones n2 = new FormCanciones();
+            n2.Show();
+            this.Close();
+        }
     }
 }

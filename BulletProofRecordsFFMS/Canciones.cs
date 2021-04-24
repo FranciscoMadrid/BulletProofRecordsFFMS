@@ -7,29 +7,38 @@ using System.Data.SqlClient;
 
 namespace BulletProofRecordsFFMS
 {
-    class Albums : BDConnection
+    class Canciones : BDConnection
     {
-        public string NombreAlbum { get; set; }
-        public int FKArtista { get; set; }
+        public string NombreCancion { get; set; }
+        public int FKArtistaID { get; set; }
+        public int FKAlbumID { get; set; }
+        public string Genero { get; set; }
+        public string AñoCreacion { get; set; }
 
-        public Albums ()
+        public Canciones ()
         {
-            NombreAlbum = null;
-            FKArtista = 0;
+            NombreCancion = null;
+            FKArtistaID = 0;
+            FKAlbumID = 0;
+            Genero = null;
+            AñoCreacion = null;
         }
 
-        public void InsertarAlbum ()
+        public void InsertarCancion()
         {
             try
             {
-                string spNombre = @"[dbo].[sp_Album_Insert]";
+                string spNombre = @"[dbo].[sp_Cancion_Insert]";
 
                 SqlCommand cmd = new SqlCommand(spNombre, sqlConnection);
 
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@Nombre", NombreAlbum);
-                cmd.Parameters.AddWithValue("@FKArtistaID", FKArtista);
+                cmd.Parameters.AddWithValue("@Nombre", NombreCancion);
+                cmd.Parameters.AddWithValue("@FKArtistaID", FKArtistaID);
+                cmd.Parameters.AddWithValue("@FKAlbumID", FKAlbumID);
+                cmd.Parameters.AddWithValue("@Genero", Genero);
+                cmd.Parameters.AddWithValue("@AnioCreacion", AñoCreacion);
 
                 sqlConnection.Open();
                 cmd.ExecuteNonQuery();
@@ -45,13 +54,13 @@ namespace BulletProofRecordsFFMS
             }
         }
 
-        public DataTable MostrarAlbum()
+        public DataTable MostrarCanciones ()
         {
             DataTable dt = new DataTable();
             try
             {
                 sqlConnection.Open();
-                string spNombre = @"[dbo].[sp_Album_Show]";
+                string spNombre = @"[dbo].[sp_Cancion_Show]";
 
                 SqlCommand cmd = new SqlCommand(spNombre, sqlConnection);
 
