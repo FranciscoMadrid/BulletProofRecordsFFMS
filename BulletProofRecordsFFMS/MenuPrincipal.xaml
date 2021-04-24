@@ -12,6 +12,7 @@
         <Button x:Name="btnCancion" Content="Canciones" Margin="125,134,570,258" Click="btnCancion_Click" />
         <Button x:Name="btnAlbum" Content="Albums" Margin="295,134,400,258" Click="btnAlbum_Click"/>
         <Button x:Name="btnArtista" Content="Artistas" Margin="482,134,213,258" Click="btnArtista_Click" />
-        <Button x:Name="btnSalir" Content="Salir" Margin="670,364,25,28" />
+        <Button x:Name="btnReporte" Content="Reporte" Margin="482,198,213,194" Click="btnReporte_Click" />
+        <Button x:Name="btnSalir" Content="Salir" Margin="670,364,25,28" Click="btnSalir_Click" />
     </Grid>
 </Window>

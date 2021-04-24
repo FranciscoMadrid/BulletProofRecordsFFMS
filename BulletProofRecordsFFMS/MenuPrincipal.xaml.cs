@@ -42,5 +42,17 @@ namespace BulletProofRecordsFFMS
             n2.Show();
             this.Close();
         }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnReporte_Click(object sender, RoutedEventArgs e)
+        {
+            FormReporte n2 = new FormReporte();
+            n2.Show();
+            this.Close();
+        }
     }
 }
