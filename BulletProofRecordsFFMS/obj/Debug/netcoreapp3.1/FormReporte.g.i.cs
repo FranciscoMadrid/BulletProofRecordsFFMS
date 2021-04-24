@@ -69,7 +69,7 @@ namespace BulletProofRecordsFFMS {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BulletProofRecordsFFMS;component/formreporte.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BulletProofRecordsFFMS;V1.0.0.0;component/formreporte.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\FormReporte.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
