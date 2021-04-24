@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\FMGAMER\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\FMGAMER\\.nuget\\packages"
+    ]
+  }
+}

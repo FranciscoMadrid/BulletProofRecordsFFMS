@@ -23,6 +23,8 @@ namespace BulletProofRecordsFFMS
         public MainWindow()
         {
             InitializeComponent();
+            BDConnection test = new BDConnection();
+            test.CheckConnection();
         }
     }
 }
