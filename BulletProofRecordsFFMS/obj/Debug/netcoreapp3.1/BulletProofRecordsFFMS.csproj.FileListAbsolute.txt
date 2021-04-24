@@ -65,3 +65,5 @@ C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\MenuPrincipal.g.cs
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormArtista.baml
 C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\MenuPrincipal.baml
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormAlbums.g.cs
+C:\Users\FMGAMER\source\repos\BulletProofRecordsFFMS\BulletProofRecordsFFMS\obj\Debug\netcoreapp3.1\FormAlbums.baml

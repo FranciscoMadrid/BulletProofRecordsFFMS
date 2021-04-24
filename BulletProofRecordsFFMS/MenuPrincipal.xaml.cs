@@ -28,5 +28,12 @@ namespace BulletProofRecordsFFMS
             n2.Show();
             this.Close();
         }
+
+        private void btnAlbum_Click(object sender, RoutedEventArgs e)
+        {
+            FormAlbums n2 = new FormAlbums();
+            n2.Show();
+            this.Close();
+        }
     }
 }
